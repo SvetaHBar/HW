@@ -1,0 +1,17 @@
+{
+ "data_per_oreah": 
+ {
+	"type": "number" ,
+	"meat_per_adult" : 0.5,  
+	"meat_per_child" : 0.2,
+	"bear_per_adult" : 2,
+	"bear_per_child" : 2,
+	"soft_drink_per_adult" : 0.5,
+	"soft_drink_per_child" : 0.5,
+	"amount_meat_for_adults" : 140,
+	"amount_meat_for_child" : 80	
+ }
+}
+
+
+
