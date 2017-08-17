@@ -34,15 +34,15 @@ def calculation(input_num_of_adults, input_num_of_children , picnic_data):
         softdrink_for_children = input_num_of_children * picnic_data['soft_drink_per_child']
         softdrink_total = softdrink_for_adults + softdrink_for_children
 
-        print('Meat for adults is :' , meat_for_adults, 'kg')
-        print ("Meat for children is :" , meat_for_children, 'kg')
-        print ("Total meat is: ", meat_total, 'kg')
-        print ("Total beers_for_adults is: ", bears_for_adults, 'bottle')
-        print ("Total beers_for_children is: ", bears_for_children, 'bottle')
-        print ("Total beers is: ", beers_total, 'bottle')
-        print('Soft Drink for adults is :', softdrink_for_adults, 'litr')
-        print ("Soft Drink for children is :", softdrink_for_children)
-        print ("Total Soft Drink is :",softdrink_total)
+        print('Meat for adults is : %s kg' % (meat_for_adults))
+        print ("Meat for children is : %s kg" % (meat_for_children))
+        print ("Total meat is: %s kg " % (meat_total))
+        print ("Total beers_for_adults is: %s bottles " % (bears_for_adults))
+        print ("Total beers_for_children is: %s bottles" %(bears_for_children))
+        print ("Total beers is: %s bottles" % (beers_total))
+        print('Soft Drink for adults is: %s litrs' % (softdrink_for_adults))
+        print ("Soft Drink for children is: %s" % (softdrink_for_children))
+        print ("Total Soft Drink is: %s " % (softdrink_total))
 
 
 
