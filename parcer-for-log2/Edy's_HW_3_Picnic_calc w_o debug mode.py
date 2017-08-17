@@ -11,8 +11,8 @@ def read_from_file():
         return picnic_data['data_per_oreah']
 
 
-def is_food_drink_in_dict(picnic_data):
-    return picnic_data
+#def is_food_drink_in_dict(picnic_data):
+    #return picnic_data
 
 
 def enter_number_of_participants_adults():
@@ -52,8 +52,8 @@ def main():
     #is_food_drink_in_dict(a)
     x = enter_number_of_participants_adults()  # meahsenim parametr 'num of adults' in x she machil returned ereh
     y = enter_number_of_participants_children()
-    z = is_food_drink_in_dict(a)
-    calculation(x,y,z)
+   # z = is_food_drink_in_dict(a)
+    calculation(x,y,a)
 
 if __name__ == '__main__':
    main()
