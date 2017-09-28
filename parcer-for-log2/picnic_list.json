@@ -9,7 +9,8 @@
 	"soft_drink_per_adult" : 0.5,
 	"soft_drink_per_child" : 0.5,
 	"cost_meat_per_adults" : 140,
-	"cost_meat_for_child" : 80	
+	"cost_meat_for_child" : 80,
+	"cost_present_per_child" : 15
  }
 }
 

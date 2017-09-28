@@ -3,11 +3,9 @@ import sys
 
 DATA_FILE = "C:\\Users\\svetah\\Desktop\\workspace\\HW\\parcer-for-log2\\picnic_list.json"
 
-def read_from_file():
+def read_picnic_data():
     with open(DATA_FILE, 'r') as f:
-        picnic_data = json.load(f)  #convert the json string to a dict, where f is basic_info
-        #iner_dict = read_data['data_per_oreah'] #because of json is a list of lists , will use only params from food_and_drinks list
-        #return iner_dict
+        picnic_data = json.load(f)
         return picnic_data['food_and_drinks']
 
 
@@ -55,22 +53,23 @@ def calculation(input_num_of_adults, input_num_of_children , picnic_data):
         print('Cost of meat for adults is: %s NIS' % (cost_meat_for_adults))
 
 
-def calculation_presents(input_num_of_boys, input_num_of_girls):
+def calculation_presents(input_num_of_boys, input_num_of_girls, picnic_data):
     boys_presents = (input_num_of_boys )
     girls_presents = (input_num_of_girls)
+    total_price_present_for_children = ((input_num_of_boys + input_num_of_girls) * picnic_data['cost_present_per_child'])
     print ("Total boys presents is: %s units" % (boys_presents))
     print ("Total girls presents is: %s units" % (girls_presents))
+    print( "Total cost for presents is: %s NIS" % (total_price_present_for_children) )
 
 
 
 def main():
-    a =  read_from_file()
-    #is_food_drink_in_dict(a)
+    a =  read_picnic_data()
     x = enter_number_of_participants_adults()  # meahsenim parametr 'num of adults' in x she machil returned ereh
     y = enter_number_of_participants_children()
     b = enter_number_of_participants_boys()
     g = enter_number_of_participants_girls()
-    calculation_presents(b,g)
+    calculation_presents(b,g,a)
     calculation(x,y,a)
 
 if __name__ == '__main__':
